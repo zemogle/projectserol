@@ -51,4 +51,4 @@ api.add_resource(SerolApi, '/serol/')
 api.add_resource(RequestApi, '/request/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

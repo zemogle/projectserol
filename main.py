@@ -3,9 +3,9 @@ import requests
 from sense_hat import SenseHat
 
 URL_BASE = 'http://10.73.224.41:5000'
-URL_MISSION = '{}/mission/'
-URL_CHALLENGE = '{}/challenge/'
-URL_STATUS = '{}/status/'
+URL_MISSION = '{}/mission/'.format(URL_BASE)
+URL_CHALLENGE = '{}/challenge/'.format(URL_BASE)
+URL_STATUS = '{}/status/'.format(URL_BASE)
 
 def check_status():
     resp = requests.get(URL_STATUS).json()
