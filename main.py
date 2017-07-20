@@ -12,7 +12,7 @@ def check_status():
     if resp['status'] == 'ok':
         send_message("tick.png", colour=(0,255,0))
 
-def send_message(isg,colour):
+def send_message(img,colour):
     sense = SenseHat()
     sense.set_rotation(180)
     sense.load_image(img)
